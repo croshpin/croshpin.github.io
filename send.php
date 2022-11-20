@@ -7,13 +7,13 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
-  $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+ // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
   $mail->isSMTP();
   $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth   = true;
   $mail->Username   = 'kopysov07@gmail.com';
   $mail->Password   = 'Komps0809';
-  $mail->Port = 587;
+  $mail->Port = 465;
   $mail->setFrom("kopysov07@gmail.com","Имя от кого отправлять");
   $mail->addAddress("wakorab902@lance7.com","");//Кому отправляем
 //$mail->addReplyTo("kudaotvetit@yandex.ru","Имя кому писать при ответе");
