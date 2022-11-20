@@ -17,7 +17,7 @@ try {
   $mail->setFrom("kopysov07@gmail.com","Имя от кого отправлять");
   $mail->addAddress("wakorab902@lance7.com","");//Кому отправляем
 //$mail->addReplyTo("kudaotvetit@yandex.ru","Имя кому писать при ответе");
-  $mail->SMTPSecure = 'tls';
+  $mail->SMTPSecure = 'ssl';
   $mail->isHTML(true);//HTML формат
   $mail->Subject = "Тема сообщения";
   $mail->Body    = "Содержание сообщения";
